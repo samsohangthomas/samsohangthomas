@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Senior Software Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+  <body>
+    <div id="vanta-net" class="vanta-screen"></div>
+    <div class="page">
+      <nav class="nav">
+  <div class="container nav-inner">
+    <div class="logo">
+      <span class="logo-dot"></span>
+      <span>PORTFOLIO</span>
+    </div>
+    <div class="nav-links">
+      <a class="nav-home" href="index.html" aria-label="Home">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 10.5L12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z" />
+        </svg>
+      </a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-icons">
+      <a href="https://www.linkedin.com" aria-label="LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+          <rect x="2" y="9" width="4" height="12" />
+          <circle cx="4" cy="4" r="2" />
+        </svg>
+      </a>
+      <a href="https://github.com" aria-label="GitHub">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+      <section id="about" class="section container glass section-glass section-block">
+        <h2>About</h2>
+        <p class="lead">
+          I’m a full-stack software engineer with experience delivering production-grade web
+          applications for multiple clients. I work across backend architecture, REST APIs,
+          integrations, and frontend development using modern JavaScript frameworks.
+        </p>
+        <p class="lead">
+          I also build and customize WordPress and WooCommerce solutions, including plugins,
+          payment flows, subscriptions, memberships, and third-party integrations. I enjoy
+          understanding business requirements, designing the right solution, and delivering
+          reliable systems that are secure, maintainable, and scalable.
+        </p>
+        <div class="about-grid">
+          <div>
+            <h3>Tech Stack</h3>
+            <div class="chip-group">
+              <span class="chip">Laravel</span>
+              <span class="chip">Lumen</span>
+              <span class="chip">PHP</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">REST APIs</span>
+              <span class="chip">WordPress</span>
+              <span class="chip">WooCommerce</span>
+              <span class="chip">Vue</span>
+              <span class="chip">Nuxt</span>
+              <span class="chip">React</span>
+              <span class="chip">Next</span>
+              <span class="chip">Angular</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Ionic</span>
+              <span class="chip">Stripe</span>
+              <span class="chip">Pipedrive</span>
+              <span class="chip">DigitalOcean</span>
+              <span class="chip">Plesk</span>
+              <span class="chip">cPanel</span>
+            </div>
+          </div>
+          <div class="terminal inline-terminal">
+            <div class="terminal-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-title">What I Deliver</div>
+              <p>API-first backend design</p>
+              <p>Payments, subscriptions, memberships</p>
+              <p>Performance &amp; security tuning</p>
+              <p>Deployment + server operations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="container">
+  <div class="foot">Connect: LinkedIn • GitHub • Email</div>
+</footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
+<script>
+  const heroBackground = document.getElementById("vanta-net");
+  if (heroBackground && window.VANTA) {
+    window.VANTA.NET({
+      el: heroBackground,
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      color: 0x2563eb,
+      backgroundColor: 0xeaf0fb,
+      points: 10.0,
+      maxDistance: 22.0,
+      spacing: 16.0,
+    });
+  }
+
+  const tabButtons = document.querySelectorAll(".tab-btn");
+  const panels = document.querySelectorAll("[data-tab-panel]");
+
+  const setActiveTab = (tab) => {
+    if (!tab) return;
+    tabButtons.forEach((btn) => btn.classList.toggle("active", btn.dataset.tab === tab));
+    panels.forEach((panel) => {
+      const isActive = panel.dataset.tabPanel === tab;
+      panel.classList.toggle("is-visible", isActive);
+    });
+  };
+
+  if (tabButtons.length && panels.length) {
+    const defaultTab = tabButtons[0]?.dataset.tab;
+    setActiveTab(defaultTab);
+    tabButtons.forEach((btn) => {
+      btn.addEventListener("click", () => setActiveTab(btn.dataset.tab));
+    });
+  }
+
+  const createPlaceholder = (label) => {
+    const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%23e2e8f0'/><text x='50%' y='50%' font-size='30' fill='%230f172a' text-anchor='middle' dominant-baseline='middle'>${label}</text></svg>`;
+    return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
+  };
+
+  const initProjectSliders = () => {
+    const mediaBlocks = document.querySelectorAll(".project-media");
+    mediaBlocks.forEach((media) => {
+      const images = Array.from(media.querySelectorAll("img"));
+      if (!images.length) return;
+
+      if (images.length === 1) {
+        const placeholderTwo = document.createElement("img");
+        placeholderTwo.src = createPlaceholder("Screenshot 2");
+        placeholderTwo.alt = "Project screenshot 2";
+        const placeholderThree = document.createElement("img");
+        placeholderThree.src = createPlaceholder("Screenshot 3");
+        placeholderThree.alt = "Project screenshot 3";
+        media.appendChild(placeholderTwo);
+        media.appendChild(placeholderThree);
+        images.push(placeholderTwo, placeholderThree);
+      }
+
+      let index = 0;
+      images.forEach((img, i) => img.classList.toggle("active", i === index));
+
+      if (images.length > 1) {
+        const prev = document.createElement("button");
+        prev.type = "button";
+        prev.className = "slider-btn prev";
+        prev.setAttribute("aria-label", "Previous screenshot");
+        prev.innerHTML = "‹";
+
+        const next = document.createElement("button");
+        next.type = "button";
+        next.className = "slider-btn next";
+        next.setAttribute("aria-label", "Next screenshot");
+        next.innerHTML = "›";
+
+        const show = (nextIndex) => {
+          index = (nextIndex + images.length) % images.length;
+          images.forEach((img, i) => img.classList.toggle("active", i === index));
+        };
+
+        prev.addEventListener("click", () => show(index - 1));
+        next.addEventListener("click", () => show(index + 1));
+
+        media.appendChild(prev);
+        media.appendChild(next);
+      }
+    });
+  };
+
+  initProjectSliders();
+</script>
+
+  </body>
+</html>

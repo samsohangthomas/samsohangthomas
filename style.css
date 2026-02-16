@@ -595,16 +595,26 @@ img {
 @media (max-width: 860px) {
   .project-card {
     flex-direction: column;
+    overflow: visible;
   }
 
   .project-media {
+    flex: none;
     width: 100%;
     max-width: none;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 10;
+    border-radius: 16px;
   }
 
   .project-media img {
     height: 100%;
+    object-fit: cover;
+    background: transparent;
+    border-radius: 14px;
+  }
+
+  .project-content {
+    padding: 16px 18px 22px;
   }
 }
 
